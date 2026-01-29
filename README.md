@@ -55,5 +55,5 @@ Línea Roja Punteada: Proyección de la IA para los próximos 15 días.
 
 Sombreado Rojo (Alpha): Rango de Probabilidad. Debido a la volatilidad, la IA estima que el precio se mantendrá dentro de esta zona con mayor probabilidad.
 
-##Descargo de responsabilidad
+## Descargo de responsabilidad
 Este proyecto tiene fines educativos y de portafolio técnico. No constituye asesoramiento financiero real.
