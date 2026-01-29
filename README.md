@@ -34,8 +34,8 @@ Puedes ver el desglose detallado de la lógica, los objetivos de negocio y el pr
 
 1. **Clonar el repositorio:**
    ```bash
-   git clone [https://github.com/TU_USUARIO/quant-investment-simulator.git](https://github.com/TU_USUARIO/quant-investment-simulator.git)
-   cd quant-investment-simulator
+   git clone [https://github.com/sklnrv/ai-asset-investment-simulator.git](https://github.com/sklnrv/ai-asset-investment-simulator.git)
+   cd ai-asset-investment-simulator
 Instalar dependencias: Se recomienda usar un entorno virtual (venv).
 
 Bash
