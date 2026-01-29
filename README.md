@@ -33,6 +33,10 @@ This project demonstrates:
 ## Documentation (Notion)
 - https://www.notion.so/Quant-Investment-Simulator-2f7227a9f96d806a82eefec42040a657?source=copy_link
 
+## Data Source
+- Nasdaq-100 Index (^NDX)
+- Historical monthly prices from Yahoo Finance
+
 ## How to run
 ```bash
 python simulator.py
