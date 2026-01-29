@@ -38,31 +38,29 @@ def run_strategy(prices, capital=100000):
 
     return cash + shares * prices[-1]
 
-
-if __name__ == "__main__":
-    initial_capital = 100000
-    returns = load_market_data()
-    final_capital = apply_strategy(returns, initial_capital)
-
-    print("Final capital:", round(final_capital, 2))
-
+# ---- DATA LOADING ----
 def load_market_data():
     """
     Placeholder for real market data.
-    In the future, this function will load
-    historical prices of the Nasdaq 100.
     """
     return [0.02, -0.01, 0.03, 0.015, -0.02]
 
 
+# ---- STRATEGY LOGIC ----
 def apply_strategy(returns, initial_capital):
-    """
-    Applies a simple investment strategy
-    based on market returns.
-    """
     capital = initial_capital
 
     for r in returns:
         capital *= (1 + r)
 
     return capital
+
+
+# ---- MAIN EXECUTION ----
+if __name__ == "__main__":
+    initial_capital = 100000
+
+    returns = load_market_data()
+    final_capital = apply_strategy(returns, initial_capital)
+
+    print("Final capital:", round(final_capital, 2))
