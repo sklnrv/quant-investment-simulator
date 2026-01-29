@@ -8,7 +8,6 @@ using randomized monthly market returns.
 # initial_capital: starting investment amount
 # months: simulation duration
 
-```python
 import random
 
 def simulate_market(days=200, start_price=10000):
