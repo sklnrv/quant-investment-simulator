@@ -25,6 +25,7 @@ This project demonstrates:
 ## How to run
 ```bash
 python simulator.py
+
 ## Example Output
 ```text
 Final capital: 112345.67
