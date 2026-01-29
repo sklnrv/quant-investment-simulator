@@ -1,0 +1,5 @@
+Simulation run example:
+
+Initial capital: $100,000
+Months simulated: 24
+Final capital: $123,478.2
