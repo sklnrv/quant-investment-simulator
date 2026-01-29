@@ -1,10 +1,6 @@
-# 📈 AI Asset Investment Simulator
+# 📈 QuantVision IA (V2.1 - Interactive)
 
-Un simulador de inversiones avanzado que combina análisis cuantitativo tradicional con **Inteligencia Artificial** para la predicción de activos financieros en tiempo real.
-
-Este proyecto permite analizar cualquier ticker de Yahoo Finance (Acciones, Criptomonedas, ETFs), entrenar un modelo de Machine Learning y proyectar tendencias futuras con márgenes de probabilidad.
-
-
+Un Analizador de inversiones avanzado que combina el poder de **Random Forest** con visualizaciones interactivas de grado profesional para proyectar tendencias de activos financieros a 15 días.
 
 ## 🧠 Documentación del Proyecto (Notion)
 Puedes ver el desglose detallado de la lógica, los objetivos de negocio y el proceso de desarrollo en mi documentación técnica:
@@ -12,48 +8,30 @@ Puedes ver el desglose detallado de la lógica, los objetivos de negocio y el pr
 
 ## ✨ Características Principales
 
-* **IA con Random Forest:** Utiliza un modelo de ensamble de 200 árboles de decisión para proyectar los precios de los próximos 15 días.
-* **Análisis Dinámico:** Capacidad de procesar cualquier activo (ej. `BTC-USD`, `NVDA`, `AAPL`) con datos actualizados al momento de la ejecución.
-* **Feature Engineering:** El modelo no solo mira el precio, sino que interpreta indicadores clave:
-    * **Momentum:** Velocidad de los cambios de precio.
-    * **Volatilidad:** Desviación estándar para medir el riesgo.
-    * **Medias Móviles (MA10/MA30):** Tendencias de corto y mediano plazo.
-* **Visualización Pro:** Gráficas con **Bandas de Confianza** que muestran el rango de incertidumbre estadística de la predicción.
-
-
+* **Motor de IA Potenciado:** Entrenamiento automático con un modelo de **500 árboles de decisión** (Random Forest) para mayor estabilidad en la predicción.
+* **Deep History:** El modelo se entrena internamente con un histórico de **48 meses** para capturar ciclos de mercado completos.
+* **Gráfica Interactiva (Plotly):** Visualización dinámica que permite hacer zoom, paneo y consultar precios exactos día por día.
+* **Filtro de Incertidumbre Realista:** Implementa un cono de probabilidad basado en la volatilidad real del activo ($\sigma \times \sqrt{t}$), ofreciendo un margen de error ajustado y profesional.
+* **Dashboards Modernos:** Interfaz limpia creada con Streamlit, enfocada en métricas clave: Precio Actual, Objetivo a 15 días y Tendencia.
 
 ## 🛠️ Stack Tecnológico
-
-* **Lenguaje:** Python 3.x
-* **Data:** `yfinance` (Yahoo Finance API)
-* **Análisis de Datos:** `pandas` & `numpy`
+* **Engine:** Python 3.x
 * **Machine Learning:** `scikit-learn` (Random Forest Regressor)
-* **Visualización:** `matplotlib`
+* **Gráficos:** `Plotly` (Interactivo)
+* **Web Framework:** `Streamlit`
+* **Data API:** `yfinance` (Yahoo Finance)
 
-## 📦 Instalación y Uso
+## 📦 Instalación y Uso Rápido (Windows)
 
-1. **Clonar el repositorio:**
-   ```bash
-   git clone [https://github.com/sklnrv/ai-asset-investment-simulator.git](https://github.com/sklnrv/ai-asset-investment-simulator.git)
-   cd ai-asset-investment-simulator
-Instalar dependencias: Se recomienda usar un entorno virtual (venv).
+¡Ahora puedes ejecutar el simulador sin tocar la consola!
 
-Bash
+1. **Descarga** el repositorio y asegúrate de tener instalado `Python 3.x`.
+2. Haz doble clic en el archivo **`INICIAR_ANALIZADOR`**.
+3. El script configurará automáticamente un entorno virtual, instalará las dependencias y lanzará la aplicación en tu navegador.
 
+*Para usuarios de Mac/Linux:*
+```bash
+python -m venv env
+source env/bin/activate
 python -m pip install -r requirements.txt
-
-Ejecutar el simulador:
-
-Bash
-
-python AIsimulator.py
-
-## 📊 Cómo interpretar los resultados
-Línea Azul: Precio real histórico de los últimos 6 meses.
-
-Línea Roja Punteada: Proyección de la IA para los próximos 15 días.
-
-Sombreado Rojo (Alpha): Rango de Probabilidad. Debido a la volatilidad, la IA estima que el precio se mantendrá dentro de esta zona con mayor probabilidad.
-
-## Descargo de responsabilidad
-Este proyecto tiene fines educativos y de portafolio técnico. No constituye asesoramiento financiero real.
+python -m streamlit run app.py
